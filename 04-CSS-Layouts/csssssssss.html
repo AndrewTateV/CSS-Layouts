@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Exercise 2 - Solution 2</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "sidebar ads"
+                "sidebar content"
+                "footer footer";
+            grid-template-columns: 1fr 2fr;
+            gap: 15px;
+            width: 600px;
+            margin: 0 auto;
+        }
+        .header {
+            grid-area: header;
+            background-color: #2196F3;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #FF9800;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .ads {
+            grid-area: ads;
+            background-color: #00BCD4;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .content {
+            grid-area: content;
+            background-color: #8BC34A;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .footer {
+            grid-area: footer;
+            background-color: #9C27B0;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="ads">Ads Section</div>
+        <div class="content">Content</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
+
