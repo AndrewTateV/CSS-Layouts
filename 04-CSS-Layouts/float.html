@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Float Collapse</title>
+  <style>
+    .container {
+      border: 2px solid blue;
+      
+    }
+    .float-box {
+      float: left;
+      width: 100px;
+      height: 100px;
+      background: lightblue;
+    }
+    .container::after {
+                    content: "";
+                    display: block;
+                    clear: both;
+                  }
+                  
+   
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="float-box"></div>
+    
+  </div>
+  <p>这里的文字会与浮动元素重叠，因为父容器高度坍塌。</p>
+</body>
+</html>
